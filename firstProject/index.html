@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Test Plan Template</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="jslogic.js"></script>
+	<script type="text/javascript"></script>
+
+</head>
+
+<!-- B O D Y -->
+<body>
+
+<!-- W R A P P E R -->
+<div id="wrapper">
+
+<!-- H E A D E R -->
+<header>
+	<label>			
+	<font face="helvetica" color="white" id="pageTitle"><h1>TEST PLAN TEMPLATE</h1></font>
+	</label>
+</header>
+	
+<!-- N A V B A R -->	
+<ul id="navList">
+	<li><a href="https://jira.hulu.com/secure/Dashboard.jspa" target="_blank"><b>JIRA</b></a></li>
+	<li><a href="https://wiki.hulu.com/dashboard.action" target="_blank"><b>WIKI</b></a></li>
+</ul>
+
+<!-- C O N T E N T -->	
+<div id="contentWrapper">
+	<div id="content">
+		<form>
+			<label>
+				TITLE
+				<input id="testPlanTitle" type="text" name="testPlanTitle" size="100" class="myText"><br>
+			</label>
+			<label>
+				PREPARED BY
+				<input id="preparedBy" type="text" name="preparedBy" size="100" class="myText">
+			</label>
+			<label>
+            		<td width="15%"/>
+            		<td>
+	              		<div id="createDevice">
+	              			<label>
+							<font id="devices" style="margin: 5px 0;e" >DEVICES</font>
+							</label>
+							<button id="btnAddDevice" class="btnAdd" onClick="createDiv()" style="padding: 5px 5px; margin: 5px 5px 5px 0;" type="button">ADD</button>
+							<button id="btnRemoveDevice" class="btnRemove" onClick="removeLastChild()" style="padding: 5px 5px; margin: 5px 5px 5px 0;" type="button">REMOVE</button>
+                		</div>
+            		</td>
+            			<div id="deviceContainer" class="deviceContainer">
+            			</div>
+  					<tr>
+  					<div id="getDevice" style="display: none" >
+  					 <div>
+  					 <label>
+  					 <font face="helvetica" color="black" id="title"><h2><u>DEVICE INFO</u></h2></font>
+  					 </label>
+   						<td width="15%"><label class="field-label">DEVICE TYPE</label></td>
+				            <select id="deviceType" class="field-value field-value-short" style=" padding: 0 0 10px 2px; margin: 0 0 15px 2px;">
+				               	<option value="None">---</option>
+				                <option value="PS3">PS3</option>
+				                <option value="PS4">PS4</option>
+				                <option value="Xbox One">Xbox 360</option>
+				                <option value="Xbox 360">Xbox One</option>
+				                <option value="Wii">Wii</option>
+				                <option value="Wii U">Wii U</option>				                 
+				             </select>
+            			<label>
+							DEVICE FIRMWARE VERSION
+							<input id="firmwareVersion" type="text" name="firmwareVersion" size="100"><br>
+						</label>
+						<label>
+							CURRENT PRODUCTION APP VERSION
+							<input id="currentAppVersion" type="text" name="currentAppVersion" size="100"><br>
+						</label>
+						<font face="helvetica" color="black" id="title"><h2><u>TEST PASS INFO</u></h2></font>
+						<label>
+							TEST PASS URL
+							<input id="testPassURL" type="text" name="testPassURL" size="100"><br>
+						</label>
+						<label>
+							BUILD VERSION
+							<input id="appBuildVersion" type="text" name="appBuildVersion" size="100"><br>
+						</label>
+						<label>
+							<td width="15%"><label class="field-label">TEST ENVIRONMENT</label></td>
+				            <select id="testEnvironment" class="field-value field-value-short" style="padding: 0 0 10px 2px; margin: 0 0 15px 2px;">
+				            	<option value="None">---</option>
+				               	<option value="Staging">Staging</option>
+				                <option value="Production">Production</option>			                 
+				             </select>
+						</label>
+						<label>
+							DOG FOOD FLAVOR
+							<input id="dogFoodFlavor" type="text" name="dogFoodFlavor" size="100"><br>
+						</label>
+						<label>
+							FEATURES TO TEST
+							<input id="featuresToTest" type="text" name="featuresToTest" size="100"><br>
+						</label>
+						 <label>
+							DUE BY DATE
+							<input id="dueBy" type="text" name="dueBy" size="100"><br>
+						</label>
+						<label>
+							TRACKING JIRA TICKET
+							<input id="trackingTicket" type="text" name="trackingTicket" size="100"><br>
+						</label>
+						<label>
+							USEFUL LINKS
+							<input id="usefulLinks" type="text" name="usefulLinks" size="100"><br>
+						</label>
+						<label>
+							NOTES<br>
+							<textarea id="notes" class="field-value field-value-long" type="text" rows="3" size="100" placeholder="Additional Information"></textarea><br>
+						</label>
+  					</div>
+  					</div>
+  					<div>
+  					<button id="btnSaveToClipboard" class="btnSaveToClipboard" onClick="generateForm()" style="padding: 5px 5px; margin: 15px 5px 0 0;" type="button">SAVE TO CLIPBOARD</button>
+  					<label id="formCopiedToClipboard"/>
+  					</div>
+  					 <tr>
+            			<label>
+            			<br>
+							PREVIEW
+						</label>
+            			<div id="generatedPreview">           			 	
+            			<td valign="top"><div id="generatedForm" class="field-value field-value-long"></div></td>
+            			</div>
+       				 </tr>
+  					</tr>
+			</label>
+		</form>
+	</div>
+</div>
+<!-- F O O T E R -->
+<footer></footer>
+
+</div> <!-- / W R A P P E R -->
+
+</body>
+</html>

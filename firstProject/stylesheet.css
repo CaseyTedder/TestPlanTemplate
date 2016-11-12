@@ -1,0 +1,107 @@
+/*    BODY
+-----------------*/
+body{
+	background-color: #d1d1d1;
+}
+
+/*    WRAPPER
+-----------------*/
+#wrapper{
+	width: 1300px;
+	margin: 20px auto;
+}
+
+/*    HEADER
+-----------------*/
+header{
+	height: 50px;
+	background-color: #4f5866;
+	padding: 10px 10px;
+}
+
+/*    NAV BAR
+-----------------*/
+#navList{
+	height: 30px;
+	background-color: #7baf9b;
+	margin: 0;
+	padding-top: 12px;
+}
+#navList li{
+	display: inline;
+	padding-right: 20px;
+}
+
+/*    CONTENT
+-----------------*/
+#contentWrapper{
+	margin: 0;
+	min-height: 800px;
+	background-color: #ffffff;
+}
+#content{
+	padding: 30px 20px 20px 20px;
+}
+#deviceContainer{
+	min-height: 2px;
+	padding: 10px 20px 10px 20px;
+	background-color: #f9f9f9;
+	border: 3px solid #f2f2f2;
+}
+#getDevice{
+    border: 3px solid #f2f2f2;
+}
+
+#datepicker{
+}
+
+#notes {
+	width: 610px;
+	height: auto;
+}
+
+#generatedForm {
+    min-height: 2px;
+	padding: 10px 20px 10px 20px;
+	background-color: #f9f9f9;
+	border: 3px solid #f2f2f2;
+}
+
+/*    FOOTER
+-----------------*/
+footer{
+	height: 40px;
+	background-color: #4f5866;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+/*	  LABELS
+-----------------*/
+label, input {
+	margin: 3px;
+	font-weight: bold;
+	display: block;
+}
+
+label {
+	margin-bottom: 3px;
+}
+
+#testPlanTitle {
+	height: 20px;
+}
+
+#preparedBy {
+	height: 20px;
+	margin-bottom: 13px;
+}
+
+#featuresAdded {
+	height: 20px;
+	margin-bottom: 13px;
+}
+
+#preview {
+	height: 20px;
+	margin-bottom: 13px;
+}
